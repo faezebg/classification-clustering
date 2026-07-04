@@ -1,142 +1,131 @@
 # Apartment Sales Classification & Clustering
 
-A comprehensive machine learning project for analyzing and clustering apartment sales data using multiple clustering algorithms and classification techniques.
+This repository contains a machine learning project for analyzing and clustering apartment sales data. The main analysis is contained in the notebook `t3-4011262043.ipynb` and the dataset is provided in `apartments-sells.csv`.
 
-## 📋 Overview
+## Overview
 
-This project applies various clustering and machine learning algorithms to apartment sales data to identify patterns, groups, and market segments. It includes data preprocessing, exploratory data analysis, and performance evaluation using multiple clustering algorithms.
+The goal of this project is to segment apartment sales records using clustering techniques and to compare cluster quality across multiple algorithms. The analysis includes data preprocessing, exploratory data analysis, feature scaling, dimensionality reduction, and clustering evaluation.
 
-## 🎯 Features
+## Features
 
-- **Data Preprocessing**: Comprehensive data cleaning and validation
-- **Exploratory Data Analysis**: Statistical analysis and visualization
-- **Multiple Clustering Algorithms**:
-  - K-Means Clustering
-  - DBSCAN
-  - OPTICS
-  - Hierarchical Clustering (Agglomerative)
-  - Fuzzy C-Means
-  - HDBSCAN
-  
-- **Performance Metrics**:
-  - Silhouette Score
-  - Calinski-Harabasz Score
-  - Davies-Bouldin Score
+- Data cleaning and preprocessing for apartment sales data
+- Exploratory data analysis with summary statistics and visualizations
+- Support for multiple clustering algorithms
+- Cluster evaluation using standard clustering metrics
+- Dimensionality reduction for visualization
 
-- **Dimensionality Reduction**: PCA for visualization
-- **Feature Scaling**: StandardScaler for normalized data
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
-├── apartments-sells.csv          # Raw apartment sales dataset
-├── apartments_clean.csv          # Cleaned dataset (generated)
-├── t3-4011262043.ipynb          # Main analysis notebook
-├── docHW3.pdf                    # Project documentation
-├── README.md                     # This file
-└── .gitignore                    # Git ignore rules
+├── apartments-sells.csv      # Raw apartment sales dataset
+├── docHW3.pdf                # Project documentation
+├── README.md                 # Project overview and instructions
+├── requirements.txt          # Python dependencies
+├── t3-4011262043.ipynb       # Main analysis notebook
+├── t3-4011262043.pdf         # Notebook exported to PDF
+└── .gitignore                # Files and folders to ignore in source control
 ```
 
-## 🚀 Getting Started
+## Setup
 
 ### Prerequisites
 
-- Python 3.8+
-- Jupyter Notebook or JupyterLab
+- Python 3.8 or later
 - pip package manager
+- Jupyter Notebook or JupyterLab
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/classification-clustering.git
 cd classification-clustering
 ```
 
-2. Create a virtual environment:
+2. Create and activate a Python virtual environment:
+
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv\Scripts\activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### Running the Project
+## Running the Analysis
 
-1. Start Jupyter:
+1. Start Jupyter Notebook:
+
 ```bash
 jupyter notebook
 ```
 
-2. Open `t3-4011262043.ipynb` and run all cells
+2. Open `t3-4011262043.ipynb`.
+3. Execute all cells in the notebook.
 
-## 📊 Dataset
+## Dataset
 
-**Source**: `apartments-sells.csv`
+The dataset file is `apartments-sells.csv`. It includes apartment sales data with features such as:
 
-The dataset contains apartment sales information with the following features:
-- Construction year
-- Floor information
-- Elevator availability
-- Parking availability
-- Warehouse availability
-- Price and area information
+- construction year
+- floor information
+- elevator availability
+- parking availability
+- warehouse availability
+- price
+- area
 
-## 🔍 Methodology
+## Methodology
 
-### 1. Data Cleaning
-- Handles Persian text values (دارد/ندارد for yes/no)
-- Validates construction years
-- Cleans floor information
-- Manages missing values
+### Data cleaning
 
-### 2. Exploratory Analysis
-- Statistical summary
-- Distribution analysis
-- Correlation analysis
-- Data visualization
+- Standardizes categorical values such as Persian yes/no labels
+- Validates numeric fields such as construction year and price
+- Handles missing or inconsistent records
+- Converts floor and area fields to numeric format where applicable
 
-### 3. Clustering Analysis
-- Applies multiple algorithms
-- Compares performance metrics
-- Visualizes cluster results
-- Provides recommendations
+### Exploratory analysis
 
-##  Results
+- Computes summary statistics
+- Examines distribution of key features
+- Analyzes feature correlations
+- Visualizes relationships and cluster behavior
 
-The project evaluates each clustering algorithm using multiple metrics to determine the best approach for segmenting the apartment market.
+### Clustering
 
-| Algorithm | Silhouette Score | Calinski-Harabasz | Davies-Bouldin |
-|-----------|---|---|---|
-| K-Means | - | - | - |
-| DBSCAN | - | - | - |
-| OPTICS | - | - | - |
-| Hierarchical | - | - | - |
-| Fuzzy C-Means | - | - | - |
-| HDBSCAN | - | - | - |
+- Applies K-Means, DBSCAN, OPTICS, hierarchical clustering, Fuzzy C-Means, and HDBSCAN
+- Scales features before clustering
+- Uses PCA for visualization of cluster assignments
+- Evaluates clustering results with Silhouette Score, Calinski-Harabasz Score, and Davies-Bouldin Score
 
+## Dependencies
 
-##  Technologies Used
+Dependencies are defined in `requirements.txt` and include:
 
-- **Data Processing**: pandas, numpy
-- **Machine Learning**: scikit-learn
-- **Clustering**: scikit-fuzzy, hdbscan
-- **Visualization**: matplotlib, seaborn
-- **Scientific Computing**: scipy
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- scipy
+- scikit-fuzzy
+- hdbscan
+- jupyter
+- ipython
 
+## Results
 
+The notebook reports clustering performance metrics and visualizes cluster assignments. To see exact results, run the notebook end to end.
 
-## 👤 Author
+## License
 
-Created as an academic project
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## 📞 Contact
+## Contact
 
-For questions or suggestions, please open an issue in the repository.
-
----
-
+If you have questions or need clarification, open an issue in the repository.
