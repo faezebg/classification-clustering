@@ -106,7 +106,7 @@ The dataset contains apartment sales information with the following features:
 - Visualizes cluster results
 - Provides recommendations
 
-## 📈 Results
+##  Results
 
 The project evaluates each clustering algorithm using multiple metrics to determine the best approach for segmenting the apartment market.
 
@@ -119,9 +119,8 @@ The project evaluates each clustering algorithm using multiple metrics to determ
 | Fuzzy C-Means | - | - | - |
 | HDBSCAN | - | - | - |
 
-*Note: Run the notebook to generate actual results*
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Data Processing**: pandas, numpy
 - **Machine Learning**: scikit-learn
@@ -129,9 +128,7 @@ The project evaluates each clustering algorithm using multiple metrics to determ
 - **Visualization**: matplotlib, seaborn
 - **Scientific Computing**: scipy
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details
 
 ## 👤 Author
 
@@ -143,4 +140,3 @@ For questions or suggestions, please open an issue in the repository.
 
 ---
 
-**Last Updated**: July 2026
